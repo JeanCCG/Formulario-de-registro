@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<meta charset="UTF-8" />
+   	    <title>CS 2022 - Desarrollo Basado en Plataformas</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+		<link href="https://fonts.googleapis.com/css2" />
+		<script src="https://kit.fontawesome.com/1b04830cf2.js" crossorigin="anonymous"></script>
+   	</head>
+   	<body>
+		<div id="bg">
+			<div class="form">
+				<h1>{% block heading %}{% endblock %}</h1>
+				{% block body %}{% endblock %}
+			</div>
+		</div>  
+   	</body>
+</html>

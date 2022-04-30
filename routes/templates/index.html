@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Formulario
+{% endblock %}
+
+{% block body %}
+<form class="datos" action="{{ url_for('login') }}" method="post">
+    <div class="mail">
+        <i class="fas fa-user"></i>
+        <input class="log-inp" name="nombre" type="text" placeholder="Nombre">
+    </div>
+    <div class="mail">
+        <i class="fas fa-user"></i>
+        <input class="log-inp" name="apellido" type="text" placeholder="Apellido">
+    </div>
+    <div class="mail">
+        <i class="fas fa-user"></i>
+        <input class="log-inp" name="celular" type="text" placeholder="Número de celular">
+    </div>
+    <div class="mail">
+        <i class="fas fa-envelope"></i>
+        <input class="log-inp" name="email" type="email" placeholder="E-mail">
+    </div>
+    <div class="mail">
+        <i class="fas fa-lock"></i>
+        <input class="log-inp" name="contraseña" type="password" placeholder="Contraseña">
+    </div>
+    <div class="mail">
+        <i class="fas fa-lock"></i>
+        <input class="log-inp" name="fecha" type="date" placeholder="Fecha de Nacimiento">
+    </div>
+    <button class="btn-log">Ingresar</button>
+</form>
+{% endblock %}
